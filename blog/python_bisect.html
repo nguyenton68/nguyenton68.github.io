@@ -40,9 +40,6 @@
               <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="restaurant.html">Kitchen</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="about.html">About</a>
             </li>
           </ul>
@@ -56,78 +53,32 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
-            <div class="site-heading">
-              <h1>Welcome</h1>
-              <span class="subheading">My Life Experience</span>
+            <div class="post-heading">
+              <h1> Bisect in Python </h1>
+              <!-- <h2 class="subheading">Problems look mighty small from 150 miles up</h2> -->
+              <span class="meta">Posted by <a href="#">Nguyen Ton</a> on October 27th, 2019</span>
             </div>
           </div>
         </div>
       </div>
     </header>
 
-    <!-- Main Content -->
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-<!--  -->
-          <div class="post-preview">
-            <a href="python_bisect.html"> <h2 class="post-title"> Bisect in Python </h2> </a>
-            <p class="post-meta">Posted by <a href="ahout.html">Nguyen Ton</a> on October 27th, 2019</p>
-          </div>
-          <hr>
-<!--  -->
-          <div class="post-preview">
-            <a href="phd.html"> <h2 class="post-title"> My PhD experience </h2> </a>
-            <p class="post-meta">Posted by <a href="ahout.html">Nguyen Ton</a> on September 23th, 2019</p>
-          </div>
-          <hr>
-
-<!-- idol -->
-          <div class="post-preview">
-            <a href="myIdols.html"> <h2 class="post-title"> My Tech Leader Idols </h2> </a>
-            <p class="post-meta">Posted by <a href="ahout.html">Nguyen Ton</a> on January 17th, 2019</p>
-          </div>
-          <hr>
-<!-- coding -->
-          <div class="post-preview">
-            <a href="coding.html"> <h2 class="post-title"> Coding questions and solutions </h2> </a>
-            <p class="post-meta">Posted by <a href="ahout.html">Nguyen Ton</a> on October 11, 2018</p>
-          </div>
-          <hr>
-<!-- shell online accesment test -->
- <!--          <div class="post-preview">
-            <a href="post.html"> <h2 class="post-title"> Shell online accesment test </h2> </a>
-            <p class="post-meta">Posted by <a href="#">Nguyen Ton</a> on September 28, 2018</p>
-          </div>
-           <hr> -->
-
-<!-- career in tech  -->
-<!--           <div class="post-preview">
-            <a href="post2.html"> <h2 class="post-title"> Start a career in tech for a woman at beginning of 30? </h2> </a>
-            <p class="post-meta">Posted by <a href="#">Nguyen Ton</a> on August 5, 2018</p>
-          </div>
-          <hr> -->
-
-<!-- fix my mac -->
-          <div class="post-preview">
-            <a href="post3.html"> <h2 class="post-title"> Fixed old macBook pro 2012 </h2> </a>
-            <p class="post-meta">Posted by <a href="#">Nguyen Ton</a> on July 20, 2018</p>
-          </div>
-          <hr>
- 
- <!-- yellowstone trip  -->
- <!--          <div class="post-preview">
-            <a href="post3.html"> <h2 class="post-title"> Yellowstone trip experience, what you should and should not do? </h2> </a>
-            <p class="post-meta">Posted by <a href="#">Nguyen Ton</a> on July 20, 2018</p>
-          </div>
-          <hr> -->
-          <!-- Pager -->
-          <div class="clearfix">
-            <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
+    <!-- Post Content -->
+    <article>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <!-- <h2>Power of python with DFS problems </h2> -->
+              <p> In this post, I'm going to explain the difference between bisect_left and bisect_right in python library. </p>
+              <p> At first, bisect is used to search to <b>insert position</b> of an element in a <b>SORTED list</b>. Suppose you are given list = [1, 2, 3, 4, 7], what should number 5 be inserted in this list (and after insert 5, this list still be sorted)?</p>
+              <p> They are the same if the element we are trying to look for is not in the list. If we are searching for position of number 5 in above example. Both bisect_left and bisect_right will output the same result, index = 4. </p>
+              <p> But if you are searching for number 4 (it's in the list), the bisect_left and bisect_right results will be difference. Bisect_left will give index = 3 (which is the position of this number in the list). Bisect_right will give index = 4 (which is to the right of itself). </p>
+              <p> Another equivalent of bisect.bisect_right is bisect.bisect. These two are the same thing.
+              <p> Jersey City, New Jersey, 10/27/2019 </p>
           </div>
         </div>
       </div>
-    </div>
+    </article>
 
     <hr>
 
@@ -137,14 +88,6 @@
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
             <ul class="list-inline text-center">
- <!--              <li class="list-inline-item">
-                <a href="#">
-                  <span class="fa-stack fa-lg">
-                    <i class="fas fa-circle fa-stack-2x"></i>
-                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                  </span>
-                </a>
-              </li> -->
               <li class="list-inline-item">
                 <a href="https://www.facebook.com/nguyenton68">
                   <span class="fa-stack fa-lg">
@@ -162,7 +105,7 @@
                 </a>
               </li>
             </ul>
-            <p class="copyright text-muted">Copyright &copy; Nguyen Website 2018</p>
+            <p class="copyright text-muted">Copyright &copy; Nguyen Website 2019</p>
           </div>
         </div>
       </div>
