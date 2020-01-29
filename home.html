@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to Nguyen Ton Home Page</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="homepage.css">
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><i class="fa fa-leaf"></i>  Nguyen Ton</a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+      	<li class="nav-item active"><a href="/#about" data-target="#about"> 
+      		<span>Home</span></a>
+      	</li>
+      	<!-- <li class="nav-item"><a href="Nguyen_Ton_Resume.pdf">CV</a></li> -->
+      	<li class="nav-item"><a href="funProject.html">Fun Projects</a></li>
+      	<li class="nav-item"><a href="blog/index.html">Blog</a></li>
+        <!-- <li class="nav-item"><a href="#">Signup  <i class="fa fa-user-plus"></i></a></li>
+        <li class="nav-item"><a href="#about">Login  <i class="fa fa-user"></i></a></li> -->
+      </ul>
+    </div>
+  </div>
+ </nav>
+
+
+<div class="container">
+	<div class="col-xs-12 col-md-4">
+		<div id="profile">
+			<div class="portrait" style="background-image: url('ava.jpg');"></div>
+			<meta itemprop="image" content="ava.jpg">
+			<div class="portrait-title">
+				<h2 itemprop="name">Nguyen (Rachel) Ton</h2>
+				<h4 itemprop="jobTitle">PhD Candidate in Physics</h4>
+				<h4 itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+					<span itemprop="name">University of Virginia</span>
+				</h4>
+			</div>
+		
+
+		<ul class="network-icon" aria-hidden="true">
+			<li>
+			<a itemprop="sameAs" href="mailto:ntt5be@virginia.edu" target="blank" rel="noopener">
+				<i class="fa fa-envelope"></i>
+			</a>
+			</li>
+			<li>
+			<a itemprop="sameAs" href="https://github.com/nguyenton68" target="blank" rel="noopener">
+				<i class="fa fa-github"></i>
+			</a>
+
+			</li>
+		</ul>
+		</div>
+	</div>
+
+	<div class="col-xs-12 col-md-8" itemprop="description">
+		<h1 id="welcome">Welcome</h1>
+		<p>
+			I am a graduate student majored in Physics at University of Virginia. My thesis advisor is Xiaochao Zheng.
+			<br>
+			I utilize C++ in order to solve physics problems.
+			I'm passionate about programming. I enjoy coding and solving coding problem.
+		</p>
+		<!-- <div class="container"> -->
+		<div class="col-md-5 col-sm-5">
+			<h3>Interests</h3>
+			<ul class="ul-interests">
+				<li>Web Development</li>
+				<li>Machine Learning</li>
+				<li><a href="gallery.html">Photograph</a></li>
+			</ul>
+		</div>
+		<div class="col-md-7 col-sm-7">
+			<h3>Education</h3>
+			<ul class="ul-edu fa-ul">
+				<li>
+					<i class="fa-li fa fa-graduation-cap"></i>
+					<div class="description">
+						<p class="course">PhD in Physics, 2019, University of Virginia</p>
+						<!-- <p class="institution">University of Virginia</p> -->
+					</div>
+				</li>
+				<li>
+					<i class="fa-li fa fa-graduation-cap"></i>
+					<div class="description">
+						<p class="course">BS in Physics, 2011, Hue College of Eduation</p>
+						<!-- <p class="institution">Hue College of Eduation</p> -->
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!-- </div> -->
+	</div>
+</div>
+
+</body>
+</html>
